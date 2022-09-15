@@ -1,0 +1,35 @@
+:root {    
+    --text-color: #737373;
+    --text-color-two:#FFFFFF;    
+    --btn-color: #FA4A0C;
+    --footer-color: #252B42;
+
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.text {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.65;
+}
+.btn{
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text-color-two);
+    background: var(--btn-color);
+    border: 0;
+}
+.img{
+    display: block;
+    height: 100%;
+}
+.justify-center {
+    justify-content: center;
+}
+@media screen and (max-width: 565px) {
+    :root{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;    
+    margin: 0;
+    padding: 0;
+}
+.baner-img{
+    position: relative;
+    background-image: url(/assets/img/header.png);
+    background-size: cover;
+    width: 100%;       
+    padding: 20vh;    
+}
+.text-baner,
+.text-baner-h{
+    color: var(--text-color-two);
+    text-align: center;
+    font-size: 24px;
+}
+.text-baner-top{
+    font-weight: bold;
+}
+.text-baner-h{
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+}
+.text-baner,
+.text-baner-h{
+    margin-bottom: 50px;
+}
+.btn-container{
+    display: flex;
+    justify-content:center;    
+}
+.btn-playstore,
+.btn-appstore{
+    width: 236px;
+    border:1px solid white;
+    font-weight: bold;
+    background-color: Transparent; 
+    border-radius: 30px;
+    padding: 20px 0;
+    margin-right: 20px;
+}
+.btn-playstore:hover,
+.btn-appstore:hover{
+    border: none;
+    background: var(--btn-color);
+}
+
+.phonetwo{
+    position: absolute;
+    left: 35%;
+    bottom: -65%;   
+    z-index: 20;
+    ;
+}
+.line{   
+    width:90%; 
+    height:2px; 
+    background: var(--text-color);
+    margin-left: 5%;
+    margin-top: 500px;
+}  
+
+@media screen and (max-width: 720px) {
+    .baner-img{
+        background: none;
+    }
+}
+@media screen and (max-width: 720px) {
+    .text-baner{
+        color: var(--text-color);
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .text-baner-h{
+        color: var(--footer-color);
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .btn-container{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 720px) {
+    .btn-playstore,
+    .btn-appstore{
+        color: var(--btn-color);
+        border: 1px solid var(--btn-color);
+        margin-bottom: 20px;
+    }
+    .btn-playstore:hover,
+    .btn-appstore:hover{
+        color: var(--text-color-two);
+    }
+
+}
+@media screen and (max-width: 720px) {
+    .phonetwo{
+        transform: translate(-45%, 0)
+    }
+}
